@@ -1,0 +1,81 @@
+.calendar-container {
+    display: flex;
+    gap: 20;
+    justify-content: center;
+
+  }
+  
+  .calendar {
+    margin: 0 40px;
+    width: 300px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .calendar-days-of-week,
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .day-name,
+  .calendar-day {
+    width: 40px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .current-month {
+    background-color: #f0f8ff;
+  }
+  
+  .other-month {
+    background-color: #f9f9f9;
+    color: #aaa;
+  }
+  
+  .today {
+    background-color: #ffeb3b;
+    font-weight: bold;
+    border: 2px solid #f57c00;
+  }
+  
+  .events-panel {
+    /* flex-grow: 1; */
+    width: 600px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .events-panel h3 {
+    margin-top: 0;
+  }
+  
+  .events-panel ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .events-panel form {
+    margin-top: 10px;
+  }
+  
+  .events-panel input {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .events-panel button {
+    padding: 5px;
+  }
